@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Apunte</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Editar Apunte</h1>
+    <form action="{{ url_for('edit', oid=apunte['_id']) }}" method="POST">
+        <label for="apunte_num">Número del Apunte:</label>
+        <input type="text" id="apunte_num" name="apunte_num" value="{{ apunte['apunte_num'] }}" required>
+
+        <label for="apunte_desc">Descripción del Apunte:</label>
+        <input type="text" id="apunte_desc" name="apunte_desc" value="{{ apunte['apunte_desc'] }}" required>
+
+        <label for="apunte_list">Lista de Apuntes:</label>
+        <ul>
+            {% for item in apunte['apunte_list'] %}
+            <li>
+                <input type="text" name="apunte_list" value="{{ item }}">
+                <a href="{{ url_for('delete_item', oid=apunte['_id'], item=item) }}">Eliminar</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <label for="apunte_list_add">Agregar nuevo elemento:</label>
+        <input type="text" id="apunte_list_add" name="apunte_list_add">
+
+        <button type="submit">Actualizar Apunte</button>
+    </form>
+    <a href="{{ url_for('index') }}">Volver a la lista de apuntes</a>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Apunte</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Crear Nuevo Apunte</h1>
+
+    <form action="{{ url_for('new') }}" method="post">
+        <label for="apunte_num">Número:</label>
+        <input type="text" id="apunte_num" name="apunte_num" required>
+        <br>
+        <label for="apunte_desc">Descripción:</label>
+        <input type="text" id="apunte_desc" name="apunte_desc" required>
+        <br>
+        <label for="apunte_list">Lista de Apuntes (separados por coma):</label>
+        <input type="text" id="apunte_list" name="apunte_list" placeholder="Elemento1, Elemento2, Elemento3">
+        <br>
+        <input type="submit" value="Crear Apunte">
+    </form>
+
+    <a href="{{ url_for('index') }}">Volver a la lista</a>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Apuntes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Lista de Apuntes</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Número</th>
+                <th>Descripción</th>
+                <th>Lista de Apuntes</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for apunte in apuntes %}
+            <tr>
+                <td>{{ apunte['apunte_num'] }}</td>
+                <td>{{ apunte['apunte_desc'] }}</td>
+                <td>
+                    <ul>
+                        {% for item in apunte['apunte_list'] %}
+                        <li>{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+                <td>
+                    <a href="{{ url_for('edit', oid=apunte['_id']) }}">Editar</a>
+                    <form action="{{ url_for('delete', oid=apunte['_id']) }}" method="POST" style="display:inline;">
+                        <button type="submit">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Añadir Nuevo Apunte</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Número de Apunte</th>
+                <th>Descripción del Apunte</th>
+                <th>Lista de Apuntes (separados por comas)</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <form action="{{ url_for('add_apunte') }}" method="POST">
+                    <td><input type="number" id="apunte_num" name="apunte_num" required></td>
+                    <td><input type="text" id="apunte_desc" name="apunte_desc" required></td>
+                    <td><input type="text" id="apunte_list" name="apunte_list" required></td>
+                    <td><button type="submit">Añadir Apunte</button></td>
+                </form>
+            </tr>
+        </tbody>
+    </table>    
+
+</body>
+</html>

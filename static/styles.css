@@ -1,0 +1,74 @@
+body {
+    background-color: #2b2b2b; /* Fondo oscuro */
+    color: #d3d3d3; /* Texto en gris claro */
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #444444; /* Fondo gris oscuro */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #777777; /* Bordes en gris medio */
+}
+
+th {
+    background-color: #555555; /* Fondo gris medio para encabezados */
+    color: #ffffff;
+}
+
+td {
+    background-color: #3b3b3b; /* Fondo gris oscuro para celdas */
+    color: #d3d3d3;
+}
+
+tr:nth-child(even) td {
+    background-color: #4d4d4d; /* Fondo un poco más claro para filas pares */
+}
+
+tr:hover td {
+    background-color: #666666; /* Fondo gris claro al pasar el cursor */
+}
+
+a {
+    color: #d3d3d3; /* Enlaces en gris claro */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff; /* Enlaces en blanco al pasar el cursor */
+}
+
+button {
+    background-color: #777777; /* Botones en gris medio */
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #999999; /* Fondo más claro para botones al pasar el cursor */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
