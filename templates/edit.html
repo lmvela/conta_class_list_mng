@@ -4,30 +4,82 @@
     <meta charset="UTF-8">
     <title>Editar Apunte</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .edit-card {
+            background: #23242b;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+            padding: 32px 28px 24px 28px;
+            max-width: 480px;
+            margin: 32px auto 0 auto;
+        }
+        .edit-form-label {
+            display: block;
+            margin-top: 18px;
+            margin-bottom: 6px;
+            color: #f5f6fa;
+            font-weight: 500;
+            letter-spacing: 0.2px;
+        }
+        .edit-form-input {
+            width: 100%;
+            padding: 10px 14px;
+            border-radius: 8px;
+            border: 1px solid #393b40;
+            background: #2d2f36;
+            color: #e0e0e0;
+            font-size: 1rem;
+            margin-bottom: 8px;
+            box-sizing: border-box;
+        }
+        .edit-form-ul {
+            margin: 0 0 12px 0;
+            padding: 0;
+        }
+        .edit-form-ul li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .edit-form-ul input[type="text"] {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .edit-back-link {
+            display: block;
+            text-align: center;
+            margin: 32px auto 0 auto;
+            font-size: 1.05rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Editar Apunte</h1>
-    <form action="{{ url_for('edit', oid=apunte['_id']) }}" method="POST">
-        <label for="apunte_num">Número del Apunte:</label>
-        <input type="text" id="apunte_num" name="apunte_num" value="{{ apunte['apunte_num'] }}" required>
+    <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+        <h1 style="margin: 0;">Editar Apunte</h1>
+    </div>
+    <div class="edit-card">
+        <form action="{{ url_for('edit', oid=apunte['_id']) }}" method="POST">
+            <label for="apunte_num" class="edit-form-label">Número del Apunte:</label>
+            <input type="text" id="apunte_num" name="apunte_num" value="{{ apunte['apunte_num'] }}" required class="edit-form-input">
 
-        <label for="apunte_desc">Descripción del Apunte:</label>
-        <input type="text" id="apunte_desc" name="apunte_desc" value="{{ apunte['apunte_desc'] }}" required>
+            <label for="apunte_desc" class="edit-form-label">Descripción del Apunte:</label>
+            <input type="text" id="apunte_desc" name="apunte_desc" value="{{ apunte['apunte_desc'] }}" required class="edit-form-input">
 
-        <label for="apunte_list">Lista de Apuntes:</label>
-        <ul>
-            {% for item in apunte['apunte_list'] %}
-            <li>
-                <input type="text" name="apunte_list" value="{{ item }}">
-                <a href="{{ url_for('delete_item', oid=apunte['_id'], item=item) }}">Eliminar</a>
-            </li>
-            {% endfor %}
-        </ul>
-        <label for="apunte_list_add">Agregar nuevo elemento:</label>
-        <input type="text" id="apunte_list_add" name="apunte_list_add">
+            <label for="apunte_list" class="edit-form-label">Lista de Apuntes:</label>
+            <ul class="edit-form-ul">
+                {% for item in apunte['apunte_list'] %}
+                <li>
+                    <input type="text" name="apunte_list" value="{{ item }}" class="edit-form-input">
+                    <a href="{{ url_for('delete_item', oid=apunte['_id'], item=item) }}" class="button" style="margin-left:8px;">Eliminar</a>
+                </li>
+                {% endfor %}
+            </ul>
+            <label for="apunte_list_add" class="edit-form-label">Agregar nuevo elemento:</label>
+            <input type="text" id="apunte_list_add" name="apunte_list_add" class="edit-form-input">
 
-        <button type="submit">Actualizar Apunte</button>
-    </form>
-    <a href="{{ url_for('index') }}">Volver a la lista de apuntes</a>
+            <button type="submit">Actualizar Apunte</button>
+        </form>
+    </div>
+    <a href="{{ url_for('index') }}" class="edit-back-link">Volver a la lista de apuntes</a>
 </body>
 </html>

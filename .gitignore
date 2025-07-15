@@ -1,0 +1,69 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.pyd
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# VSCode settings
+.vscode/
+
+# Flask and Python environment files
+instance/
+.webassets-cache
+.env
+.env.*
+
+# macOS and Windows system files
+.DS_Store
+Thumbs.db
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Local SQLite database files
+*.sqlite3
+*.db
+
+# Logs
+*.log
