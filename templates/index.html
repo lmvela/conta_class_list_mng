@@ -7,6 +7,15 @@
 </head>
 <body>
     <h1>Lista de Apuntes</h1>
+    <div style="display: flex; justify-content: flex-end; margin-bottom: 16px; margin-right: 56px">
+        <form action="{{ url_for('export_apuntes') }}" method="POST" style="margin: 0; display: inline;">
+            <button type="submit">Exportar todo a JSON</button>
+        </form>
+        <form action="{{ url_for('import_apuntes') }}" method="POST" style="margin: 0 0 0 8px; display: inline;">
+            <button type="submit">Importar desde JSON</button>
+        </form>
+    </div>
+
 
     <table>
         <thead>

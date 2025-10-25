@@ -1,0 +1,935 @@
+[
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a45"
+    },
+    "apunte_num": 2,
+    "apunte_desc": "Alimentacion",
+    "apunte_list": [
+      "LAGRANJADEGUSTAGRANOLLERS",
+      "DELPORTALET",
+      "MERCADONA",
+      "CARREFOUR",
+      "CARREF",
+      "LASIRENA",
+      "LIDL",
+      "ALDI",
+      "AMETLLER",
+      "ALCAMPO",
+      "SPART",
+      "MERCABENISOL",
+      "BONAREA",
+      "CHAMPIONGRANOLLERS",
+      "CAPRABO",
+      "MACXIPA",
+      "CONDIS",
+      "CONSUM",
+      "FORN DE PA",
+      "EXPBEJAR",
+      "SUPERCOR",
+      "ERICPASTISSER",
+      "CONSUM GRANOLLERS",
+      "TURRIS",
+      "IBADSUPERMERCADO",
+      "MONTAJES TARARSLSTA.COLOMA DES",
+      "COALIMENT",
+      "XOCOLATES GRANOLLERS",
+      "FUSSIMANYA",
+      "BENICASIM AVGRANJAIMEIBENICASSIM ES",
+      "PATONET",
+      "PULVINAR",
+      "NOUGAT",
+      "CAFFEILFORNO",
+      "CANJOANDEPAPALAU",
+      "CANBASTONS",
+      "ORIGOGRANOLLERS",
+      "LACHINATA",
+      "CALAQUIMA CASTELLAR DEES",
+      "AGRANEL SHOP GIRONA",
+      "FETAMACARRER NOUMATARO",
+      "BONSUC, S.L.",
+      "SUPERMERCADOS TEST",
+      "SUPERMERCADOS TEST2"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a46"
+    },
+    "apunte_num": 3,
+    "apunte_desc": "Alquiler",
+    "apunte_list": [
+      "JOSEMIGUELALONSO",
+      "M.ANDUJAR"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a47"
+    },
+    "apunte_num": 4,
+    "apunte_desc": "Medicos, farmacias",
+    "apunte_list": [
+      "MEDICINA",
+      "FARMACIA",
+      "JOAQUIM BOSCH",
+      "SERVALLES OFT",
+      "FARMAFREE"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a48"
+    },
+    "apunte_num": 5,
+    "apunte_desc": "Restaurantes Cafes",
+    "apunte_list": [
+      "CHIRASHI",
+      "BAR",
+      "TORRONS",
+      "VIENA",
+      "IBERICUS",
+      "ELFORNET",
+      "PIZZERIA",
+      "OHTAPA",
+      "SAPOREITALIANO",
+      "ELRACO",
+      "LAPENTOLA",
+      "MCDONALD",
+      "TODOBUENO",
+      "FIRSTITALIAN",
+      "4CAPELLANBARCELONA",
+      "MELTINGSPOTCASTELLDEFELSES",
+      "PECCATUM",
+      "CAMINETTO",
+      "CAFFE IL FORNO",
+      "REST. LA RIERA",
+      "TAGLIATELLA",
+      "RESTAURANT LA FONDA",
+      "ENRIQUE TOMAS",
+      "STARBUCKS",
+      "LA DANIELA",
+      "CHOCOLATERIA GOURMET",
+      "VIPS",
+      "AEROCLUBBCNSBDSABADELL",
+      "DEGUSTA 32SL GRANOLLERS",
+      "FORNDECABRIANES",
+      "RESTAURANT LAFONDA",
+      "RESTAURANT ELNAGUABO",
+      "RAFAEL GALINDO BENICASIM",
+      "RESTAURANT SORLIEMOCIONSVILASSAR",
+      "RISTRETTO TORREDEMBARRA",
+      "0GLUTEN GRANOLLERS",
+      "PASTISSERIA TRESTORRES",
+      "FORNDEPAMAGRANOLLERS",
+      "FORNCELIS VILAFRANCA",
+      "FORNDEPAMAGRANOLLERS",
+      "LACULLERETA BENICASIM",
+      "MARABRASA RESTAURANTE BENICASSIM",
+      "SUCOCINAJAPONESA",
+      "CASACANTONIERA",
+      "PULVINAR TARRAGONA",
+      "FORNNOE MATARO",
+      "ATENEA PORTBCNMATARO RTMATARO",
+      "PZZERIALLUIS",
+      "ELFARCELL",
+      "FUNDACIO PRIVADA VOLAROCADELVES",
+      "ELPATIO VILA-SECA",
+      "ELRECGRANOLLERS",
+      "MAXIMUM",
+      "RESTAURANT CIMALIGUES",
+      "FORNSDELPI-CARDENAL",
+      "ELPASSEIG GRANOLLERS ES",
+      "DEGUSTA 32SL",
+      "BOTAVARA BENICASSIM",
+      "XATAD'OR GRANOLLERS",
+      "LADOLAHERMINIA",
+      "ORIMARPE",
+      "FORNDELBARRI",
+      "ORFILAJYC",
+      "O'PANIGUALADA IGUALADA",
+      "RESTAURANT MASELNADALELSHOSTALETSES",
+      "COOKING SPORTFOOD",
+      "VILALTA PASTISSERS SLMONTCADA",
+      "PURABRASA BARCELONA",
+      "CASACARMEN ANECBLAUCASTELLDEFELSES",
+      "MONIBERICGRANOLLERS GRANOLLERS",
+      "SOMDALLA AMATLLER BARCELONA",
+      "CALFORNER GRANOLLERS",
+      "CHOCOLAT BOXCAPELLANS"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a49"
+    },
+    "apunte_num": 6,
+    "apunte_desc": "Electricidad",
+    "apunte_list": [
+      "ESTABANELL",
+      "ENDESA"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a4a"
+    },
+    "apunte_num": 7,
+    "apunte_desc": "Agua",
+    "apunte_list": [
+      "SOREA",
+      "SOCIEDAD GRAL.AGUAS"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a4b"
+    },
+    "apunte_num": 8,
+    "apunte_desc": "Transporte, taxis, trenes (no viajes vacaciones)",
+    "apunte_list": [
+      "TRANSPORTE",
+      "TAXI",
+      "RENFECERCANIAS",
+      "RENFE",
+      "METROBARCELONA",
+      "FF.CC.GENERALITAT"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a4c"
+    },
+    "apunte_num": 9,
+    "apunte_desc": "Parkings",
+    "apunte_list": [
+      "AP.",
+      "PARKING",
+      "APARCAMIENTO",
+      "ESTACIONAMENT",
+      "BARCELONADESERVEISMUNIBARCELONA",
+      "PARCCENTRAL",
+      "BSMAPGARCIAFARIA",
+      "PORT DE MATARO",
+      "AENAAEROPUERTOS",
+      "B.S.M.APARCAMENTS",
+      "PKAENA11",
+      "SABA"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a4d"
+    },
+    "apunte_num": 10,
+    "apunte_desc": "Moda calzado complementos",
+    "apunte_list": [
+      "MODA",
+      "CALZADO",
+      "PRETTY",
+      "ROCAVILLAGE",
+      "GEOX"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a4e"
+    },
+    "apunte_num": 11,
+    "apunte_desc": "Gasolina",
+    "apunte_list": [
+      "PETROPRIX",
+      "REPSOL",
+      "BP",
+      "CEPSA",
+      "COMBUSTIBLE",
+      "CARBURANTS",
+      "BENZOIL",
+      "E.S.",
+      "ENAGIP",
+      "O OIL GRANOLLERS",
+      "GRUPOILNET",
+      "PETRONETESPAASA",
+      "PETROVALLES",
+      "CEDIPSA"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a4f"
+    },
+    "apunte_num": 12,
+    "apunte_desc": "Juguetes",
+    "apunte_list": [
+      "JUGUETTOS",
+      "HOBBYGRANOLLERS",
+      "ALE-HOP",
+      "DREAMJOCSJOGUINES",
+      "DRIM"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a50"
+    },
+    "apunte_num": 13,
+    "apunte_desc": "Mascotas",
+    "apunte_list": [
+      "KIWOCO",
+      "ACUARIOS"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a51"
+    },
+    "apunte_num": 14,
+    "apunte_desc": "Mecanico",
+    "apunte_list": [
+      "MIDOCAR",
+      "FEUVERT",
+      "AUTOCENTERSANT CUGAT"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a52"
+    },
+    "apunte_num": 15,
+    "apunte_desc": "ITV",
+    "apunte_list": [
+      "ITV",
+      "APPLUS"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a53"
+    },
+    "apunte_num": 16,
+    "apunte_desc": "Muebles / Chapuzas",
+    "apunte_list": [
+      "IKEA",
+      "HOGARDECOR",
+      "LMLLISSADEMUNT",
+      "DOMTI",
+      "LEROYMERLINCABRERA",
+      "LEROY MERLIN"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a54"
+    },
+    "apunte_num": 17,
+    "apunte_desc": "Actividades Daniel",
+    "apunte_list": [
+      "SALTING",
+      "TIBIDABO",
+      "COSESDEMUNTANYA",
+      "SOULDPARK",
+      "CIMD'ALIGUES",
+      "EXPODIVERSION"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a55"
+    },
+    "apunte_num": 18,
+    "apunte_desc": "Musica",
+    "apunte_list": [
+      "ALFASONI"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a56"
+    },
+    "apunte_num": 19,
+    "apunte_desc": "Peluqueria, drogueria",
+    "apunte_list": [
+      "PERRUQUERIA",
+      "DRUNI",
+      "ANARABYANALERIDA"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a57"
+    },
+    "apunte_num": 20,
+    "apunte_desc": "Miscelania Hogar: chinos, el corte ingles",
+    "apunte_list": [
+      "HIPERASIA",
+      "CORTEINGLES",
+      "UMASTORE",
+      "CRACKGRANOLLERS",
+      "CULINARIUM",
+      "ITANTGRANOLLERS",
+      "8266GRANOLLERSSESTEVE",
+      "MERCAEURO JI"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a58"
+    },
+    "apunte_num": 21,
+    "apunte_desc": "Libros / Fotos",
+    "apunte_list": [
+      "ESPASACALPE",
+      "ABACUS",
+      "EPC-LLIBRES",
+      "FOTOPRIX",
+      "PAPERERIAGRANOLLERS",
+      "CASADELLIBRO",
+      "COPISTERIAPALAUSLGRANOLLERS"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a59"
+    },
+    "apunte_num": 22,
+    "apunte_desc": "Telefonia",
+    "apunte_list": [
+      "PEPEMOBILE",
+      "SFAM",
+      "BuyBack",
+      "Pepe Mobile",
+      "Pepemobile",
+      "SIMYO"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a5a"
+    },
+    "apunte_num": 23,
+    "apunte_desc": "Coche",
+    "apunte_list": [
+      "BIP DRIVE"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a5b"
+    },
+    "apunte_num": 24,
+    "apunte_desc": "Deportes",
+    "apunte_list": [
+      "DECATHLON",
+      "EN GOLF LA ROCA",
+      "PISCINES DE LA GARRIGA",
+      "PISCINES LA GARRIGA",
+      "NATACIO",
+      "LABOSCH",
+      "BENIKARTS"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a5c"
+    },
+    "apunte_num": 25,
+    "apunte_desc": "Hoteles / Apartamentos",
+    "apunte_list": [
+      "INSAGRA PINEDA",
+      "MELIA",
+      "SORLIVILASSAR",
+      "LE CHAT NOIR",
+      "APAR PLAZA DE LES TERESE",
+      "GESTORA CHAMBERI",
+      "ADINA"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a5d"
+    },
+    "apunte_num": 26,
+    "apunte_desc": "Regalos",
+    "apunte_list": [
+      "BOTIGAMONSANTBENET",
+      "ELMONDELAFESTAMUFI2GRANOLLERS"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a5e"
+    },
+    "apunte_num": 27,
+    "apunte_desc": "Impuestos / Multas",
+    "apunte_list": [
+      "IMPUESTOS",
+      "TRIBUTSSERVICAIXA",
+      "SERVEICATALA DE TRANSIT"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a5f"
+    },
+    "apunte_num": 28,
+    "apunte_desc": "Bizum Salida",
+    "apunte_list": [
+      "BIZUMAFAVORDE"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a60"
+    },
+    "apunte_num": 29,
+    "apunte_desc": "Bizum Entrada",
+    "apunte_list": [
+      "BIZUM DE"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a61"
+    },
+    "apunte_num": 30,
+    "apunte_desc": "Gimnasios",
+    "apunte_list": [
+      "SPORT AQUA POLINYA",
+      "SANT CUGAT DIR"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a62"
+    },
+    "apunte_num": 31,
+    "apunte_desc": "Educacion Daniel",
+    "apunte_list": [
+      "ESCOLAPIA"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a63"
+    },
+    "apunte_num": 32,
+    "apunte_desc": "Loterias",
+    "apunte_list": [
+      "LOTERIASYAPUESTAS",
+      "ONCE",
+      "VENTURA 24",
+      "SELAE",
+      "LIQUIDACION DINERARIA DE PREMIOS"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a64"
+    },
+    "apunte_num": 33,
+    "apunte_desc": "Peajes",
+    "apunte_list": [
+      "A.C.E.S.A",
+      "INVICATBRA.",
+      "INVICATSAL."
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a65"
+    },
+    "apunte_num": 34,
+    "apunte_desc": "Hobby Luis",
+    "apunte_list": [
+      "FARNELLCOMPONENTS"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a66"
+    },
+    "apunte_num": 35,
+    "apunte_desc": "Teatro cines museos",
+    "apunte_list": [
+      "MOLINOBARCELONA",
+      "DINOEXPO"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a67"
+    },
+    "apunte_num": 36,
+    "apunte_desc": "Electrodomesticos, aparatos",
+    "apunte_list": [
+      "MEDIMARKT",
+      "REDCOONBENELUX",
+      "GRUP CARRERA"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a68"
+    },
+    "apunte_num": 37,
+    "apunte_desc": "Viajes Vacaciones",
+    "apunte_list": [
+      "VUELING AIRLINES",
+      "RATP",
+      "METRO DE MADRID",
+      "EDUARDO GOMEZ BULEO"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a69"
+    },
+    "apunte_num": 38,
+    "apunte_desc": "Seguros",
+    "apunte_list": [
+      "MAPFRE",
+      "RACE - REAL",
+      "RACC",
+      "PELAYO",
+      "RECIBO CAJA DE SEGUROS REUNIDOS"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a6a"
+    },
+    "apunte_num": 39,
+    "apunte_desc": "Multas",
+    "apunte_list": [
+      "SERVEI CATALA DE TRANSIT"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a6b"
+    },
+    "apunte_num": 100,
+    "apunte_desc": "Nomina",
+    "apunte_list": [
+      "INGENICO",
+      "FICO TRIAD",
+      "GEZE",
+      "INEM",
+      "Kostal",
+      "FICOMIRRORS"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a6c"
+    },
+    "apunte_num": 200,
+    "apunte_desc": "Dividendos",
+    "apunte_list": [
+      "ABONO RENDIMIENTOS",
+      "VENTA DERECHOS VALORES"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a6d"
+    },
+    "apunte_num": 201,
+    "apunte_desc": "Ampliacion Valores",
+    "apunte_list": [
+      "AMPLIACION CAPITAL VALORES"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a6e"
+    },
+    "apunte_num": 202,
+    "apunte_desc": "Gastos Comisiones Valores",
+    "apunte_list": [
+      "COMISION ADMINISTRACION Y CUSTODIA VALORES",
+      "COMISION ADMINISTRACION DE VALORES"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a6f"
+    },
+    "apunte_num": 203,
+    "apunte_desc": "COMPRA VENTA VALORES OB",
+    "apunte_list": [
+      "COMPRA OB VALORES",
+      "VENTA OB VALORES"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a70"
+    },
+    "apunte_num": 300,
+    "apunte_desc": "Ingresos",
+    "apunte_list": [
+      "INGRESO"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a71"
+    },
+    "apunte_num": 301,
+    "apunte_desc": "RETENCIONES HACIENDA / Impuestos",
+    "apunte_list": [
+      "RETENCION HACIENDA",
+      "Impuestos retenidos",
+      "I.R.P.F."
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a72"
+    },
+    "apunte_num": 302,
+    "apunte_desc": "Gastos Comisiones",
+    "apunte_list": [
+      "COMISION POR COMPRAS REALIZADAS EN MONEDA NO EURO"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a73"
+    },
+    "apunte_num": 303,
+    "apunte_desc": "Bonificacion Bancos / Intereses",
+    "apunte_list": [
+      "BONIFICACION",
+      "Intereses a su favor",
+      "DEVOLUCION RECIBOS PRINCIPALES",
+      "INTERESES HABER",
+      "ABONO 1%",
+      "ABONO 2%",
+      "ABONO 3%",
+      "LIQUIDACION POR ABONOS VARIOS"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a74"
+    },
+    "apunte_num": 304,
+    "apunte_desc": "Retrocesion Abonos",
+    "apunte_list": [
+      "RETROCESION DE LIQUIDACION POR ABONOS VARIOS"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a75"
+    },
+    "apunte_num": 305,
+    "apunte_desc": "Targeta Pre-pago",
+    "apunte_list": [
+      "RECARGA TARJETA PREPAGO",
+      "DESCARGA TARJETA PREPAGO"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a76"
+    },
+    "apunte_num": 306,
+    "apunte_desc": "Retirada Efectivo",
+    "apunte_list": [
+      "RET.EFECTIVO",
+      "DISPOSICION EN CAJERO",
+      "DISPOSICION CAJERO"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a77"
+    },
+    "apunte_num": 307,
+    "apunte_desc": "Entrega a cuenta",
+    "apunte_list": [
+      "ENTREGA A CUENTA"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a78"
+    },
+    "apunte_num": 500,
+    "apunte_desc": "Transferencias Recibidas",
+    "apunte_list": [
+      "Transferencia recibida",
+      "TRANSFERENCIA DE",
+      "TRANSFERENCIASliquidezmensual",
+      "TRANSFERENCIASLiquidezcuentacomun",
+      "TRANSFERENCIASLiq"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a79"
+    },
+    "apunte_num": 501,
+    "apunte_desc": "Transferencias Enviadas",
+    "apunte_list": [
+      "RECIBO 0073 0100 755 BBBWNRF",
+      "TRANSFERENCIA A FAVOR DE",
+      "RECIBO PAYPAL"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a7a"
+    },
+    "apunte_num": 502,
+    "apunte_desc": "Traspasos emitido entre cuentas",
+    "apunte_list": [
+      "Traspaso emitido",
+      "SU ORDEN DE TRASPASO DE EFECTIVO"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a7b"
+    },
+    "apunte_num": 503,
+    "apunte_desc": "Traspasos recibido entre cuentas",
+    "apunte_list": [
+      "Traspaso recibido"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a7c"
+    },
+    "apunte_num": 504,
+    "apunte_desc": "Liquidacion Tarjetas Credito",
+    "apunte_list": [
+      "LIQUIDACION DE LA TARJETA DE CREDITO",
+      "LIQUIDACION CONTRATO TARJETA"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a7d"
+    },
+    "apunte_num": 505,
+    "apunte_desc": "Liquidacion Cuentas",
+    "apunte_list": [
+      "LIQUIDACION CUENTA",
+      "LIQUIDACION DEL CONTRATO"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a7e"
+    },
+    "apunte_num": 506,
+    "apunte_desc": "Apertura/Imposicion deposito",
+    "apunte_list": [
+      "Apertura Dep",
+      "ORDEN DE IMPOSICION EN CONTRATO A PLAZO"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a7f"
+    },
+    "apunte_num": 507,
+    "apunte_desc": "Cierre/Retirada deposito",
+    "apunte_list": [
+      "IMPORTE PROCEDENTE DE CUENTA A PLAZO",
+      "ORDEN DE DISPOSICION ANTICIPADA"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a80"
+    },
+    "apunte_num": 508,
+    "apunte_desc": "Rendimientos Depositos",
+    "apunte_list": [
+      "LIQUIDACION INTERESES DEL CONTRATO"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a81"
+    },
+    "apunte_num": 509,
+    "apunte_desc": "Imposicion sin definir",
+    "apunte_list": [
+      "SU ORDEN DE IMPOSICION"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a82"
+    },
+    "apunte_num": 510,
+    "apunte_desc": "Transferencia recibida EMMA",
+    "apunte_list": [
+      "TRANSFERENCIASMovimiento ING"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a83"
+    },
+    "apunte_num": 600,
+    "apunte_desc": "Apuntes de Saldo: Deposito a plazo",
+    "apunte_list": [
+      "OB Saldo:DEPOSITO A PLAZO"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a84"
+    },
+    "apunte_num": 601,
+    "apunte_desc": "Apuntes de Saldo: Valores",
+    "apunte_list": [
+      "OB Saldo:VALORES"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a85"
+    },
+    "apunte_num": 602,
+    "apunte_desc": "Apuntes de Saldo: Cuenta Ahorro",
+    "apunte_list": [
+      "OB Saldo:CUENTA AHORRO"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a86"
+    },
+    "apunte_num": 603,
+    "apunte_desc": "Apuntes de Saldo: Cuante Corriente",
+    "apunte_list": [
+      "OB Saldo:C/C OPERATIVA"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "66bbccf6061b1bc6703c0a87"
+    },
+    "apunte_num": 1000,
+    "apunte_desc": "UNKNOWN / TO Investigate",
+    "apunte_list": [
+      "PLUSMOVILES",
+      "KPNRECARGAS",
+      "ENMILLIAMP.COM",
+      "E0527 GRANOLLERS CAMP",
+      "ACADEMY EXPRESS",
+      "QUINLAN DIAGONAL",
+      "PAGO RECIBO DE NUM. 131918 CON LA TARJETA",
+      "PRIMERLOWCOST"
+    ]
+  }
+]
