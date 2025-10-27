@@ -6,16 +6,49 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Lista de Apuntes</h1>
-    <div style="display: flex; justify-content: flex-end; margin-bottom: 16px; margin-right: 56px">
-        <form action="{{ url_for('export_apuntes') }}" method="POST" style="margin: 0; display: inline;">
-            <button type="submit">Exportar todo a JSON</button>
-        </form>
-        <form action="{{ url_for('import_apuntes') }}" method="POST" style="margin: 0 0 0 8px; display: inline;">
-            <button type="submit">Importar desde JSON</button>
-        </form>
-    </div>
 
+    <h1>Añadir Nuevo Apunte</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Número de Apunte</th>
+                <th>Descripción del Apunte</th>
+                <th>Lista de Apuntes (separados por comas)</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <form action="{{ url_for('add_apunte') }}" method="POST">
+                    <td><input type="number" id="apunte_num" name="apunte_num" required></td>
+                    <td><input type="text" id="apunte_desc" name="apunte_desc" required></td>
+                    <td><input type="text" id="apunte_list" name="apunte_list" required></td>
+                    <td><button type="submit">Añadir Apunte</button></td>
+                </form>
+            </tr>
+
+            <tr>
+                <form action="{{ url_for('export_apuntes') }}" method="POST" style="margin: 0; display: inline;">
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td><button type="submit">Exportar todo a JSON</button></td>
+                </form>               
+            </tr>      
+            <tr>                          
+                <form action="{{ url_for('import_apuntes') }}" method="POST" style="margin: 0 0 0 8px; display: inline;">
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td><button type="submit">Importar desde JSON</button></td>
+                </form>
+            </tr>                    
+        
+        </tbody>
+    </table>   
+
+
+    <h1>Lista de Apuntes</h1>
 
     <table>
         <thead>
@@ -48,28 +81,6 @@
             {% endfor %}
         </tbody>
     </table>
-
-    <h2>Añadir Nuevo Apunte</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Número de Apunte</th>
-                <th>Descripción del Apunte</th>
-                <th>Lista de Apuntes (separados por comas)</th>
-                <th>Acción</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <form action="{{ url_for('add_apunte') }}" method="POST">
-                    <td><input type="number" id="apunte_num" name="apunte_num" required></td>
-                    <td><input type="text" id="apunte_desc" name="apunte_desc" required></td>
-                    <td><input type="text" id="apunte_list" name="apunte_list" required></td>
-                    <td><button type="submit">Añadir Apunte</button></td>
-                </form>
-            </tr>
-        </tbody>
-    </table>    
 
 </body>
 </html>
