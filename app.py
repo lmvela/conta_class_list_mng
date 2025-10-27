@@ -20,8 +20,12 @@ collection = db['apuntes_desc_col']
 
 @app.route('/')
 def index():
-    apuntes = collection.find()
-    return render_template('index.html', apuntes=apuntes)
+    try:
+        apuntes = collection.find()
+        return render_template('index.html', apuntes=apuntes)
+    except Exception as e:
+        # If DB is unavailable, show error page
+        return render_template('error.html'), 500
 
 @app.route('/add_apunte', methods=['POST'])
 def add_apunte():

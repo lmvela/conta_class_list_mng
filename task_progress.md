@@ -1,0 +1,5 @@
+- [ ] Analyze current DB connection and error handling in app.py
+- [ ] Update backend to catch DB connection errors
+- [ ] Render a user-friendly error message in the browser
+- [ ] Test by simulating DB unavailability
+- [ ] Verify error message appears as expected
