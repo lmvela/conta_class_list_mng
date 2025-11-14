@@ -1,5 +1,6 @@
 {
   "mongodb": {
-    "url": "mongodb://localhost:27017/conta_db"
+    "url": "mongodb://localhost:27017/",
+    "db": "conta_db"
   }
 }

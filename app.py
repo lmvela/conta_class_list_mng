@@ -16,12 +16,21 @@ app.secret_key = 'your_secret_key'
 with open(os.path.join(os.path.dirname(__file__), 'config', 'config.json')) as f:
     config = json.load(f)
 mongodb_cfg = config.get('mongodb', {})
-mongo_url = mongodb_cfg.get('url', 'mongodb://localhost:27017/conta_db')
+mongo_url = mongodb_cfg.get('url', 'mongodb://localhost:27017')
+
+# Get DB name from config
+db_name = mongodb_cfg.get('db', 'conta_db')
 
 client = MongoClient(mongo_url)
-# If the database is specified in the URL, get_default_database() will return it
-db = client.get_default_database()
+db = client[db_name]
 collection = db['apuntes_desc_col']
+
+# Ensure collection exists
+if 'apuntes_desc_col' not in db.list_collection_names():
+    # Create collection by inserting and deleting a dummy document
+    dummy = {"_init": True}
+    result = collection.insert_one(dummy)
+    collection.delete_one({"_id": result.inserted_id})
 
 @app.route('/')
 def index():
