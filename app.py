@@ -4,6 +4,11 @@ from flask import Flask, render_template, request, redirect, url_for, flash, sen
 from pymongo import MongoClient
 from bson import ObjectId
 
+# Import logger
+from logger import get_logger
+
+logger = get_logger()
+
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
 
@@ -24,6 +29,7 @@ def index():
         apuntes = collection.find()
         return render_template('index.html', apuntes=apuntes)
     except Exception as e:
+        logger.error(f"Error in index route: {e}", exc_info=True)
         # If DB is unavailable, show error page
         return render_template('error.html'), 500
 
@@ -46,6 +52,7 @@ def add_apunte():
 def edit(oid):
     apunte = collection.find_one({'_id': ObjectId(oid)})
     if not apunte:
+        logger.error(f"Apunte not found for oid={oid}")
         flash('Apunte no encontrado.', 'error')
         return redirect(url_for('index'))
 
@@ -70,17 +77,25 @@ def edit(oid):
 
 @app.route('/delete_item/<oid>/<item>')
 def delete_item(oid, item):
-    collection.update_one(
-        {'_id': ObjectId(oid)},
-        {'$pull': {'apunte_list': item}}
-    )
-    flash(f'Item "{item}" eliminado con éxito.', 'success')
+    try:
+        collection.update_one(
+            {'_id': ObjectId(oid)},
+            {'$pull': {'apunte_list': item}}
+        )
+        flash(f'Item "{item}" eliminado con éxito.', 'success')
+    except Exception as e:
+        logger.error(f"Error deleting item '{item}' from apunte {oid}: {e}", exc_info=True)
+        flash(f'Error eliminando item "{item}".', 'error')
     return redirect(url_for('edit', oid=oid))
 
 @app.route('/delete/<oid>', methods=['POST'])
 def delete(oid):
-    collection.delete_one({'_id': ObjectId(oid)})
-    flash('Apunte eliminado con éxito.', 'success')
+    try:
+        collection.delete_one({'_id': ObjectId(oid)})
+        flash('Apunte eliminado con éxito.', 'success')
+    except Exception as e:
+        logger.error(f"Error deleting apunte {oid}: {e}", exc_info=True)
+        flash('Error eliminando apunte.', 'error')
     return redirect(url_for('index'))
 
 @app.route('/export_apuntes', methods=['POST'])
@@ -108,20 +123,26 @@ def import_apuntes():
 
     import_path = os.path.join(os.path.dirname(__file__), 'log', 'full_export.json')
     if not os.path.exists(import_path):
+        logger.error("Import file ./log/full_export.json not found for import_apuntes")
         flash('No se encontró ./log/full_export.json para importar.', 'error')
         return redirect(url_for('index'))
 
-    with open(import_path, 'r', encoding='utf-8') as f:
-        data = loads(f.read())
+    try:
+        with open(import_path, 'r', encoding='utf-8') as f:
+            data = loads(f.read())
 
-    # Remove _id from imported documents to avoid duplicate key errors
-    for doc in data:
-        doc.pop('_id', None)
-    if data:
-        collection.insert_many(data)
-        flash('Importación completada desde ./log/full_export.json', 'success')
-    else:
-        flash('No se encontraron datos para importar.', 'error')
+        # Remove _id from imported documents to avoid duplicate key errors
+        for doc in data:
+            doc.pop('_id', None)
+        if data:
+            collection.insert_many(data)
+            flash('Importación completada desde ./log/full_export.json', 'success')
+        else:
+            logger.error("No data found in import_apuntes file")
+            flash('No se encontraron datos para importar.', 'error')
+    except Exception as e:
+        logger.error(f"Error importing apuntes: {e}", exc_info=True)
+        flash('Error durante la importación.', 'error')
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
