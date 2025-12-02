@@ -48,7 +48,9 @@ echo ""
 echo "🐳 Reconstruyendo contenedor con Docker Compose..."
 cd "$REPO_DIR"
 
-docker compose up --build --force-recreate -d
+docker compose down
+docker compose build --no-cache
+docker compose up -d
 
 if [ $? -ne 0 ]; then
     echo "❌ ERROR: Docker Compose falló."
