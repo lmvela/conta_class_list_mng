@@ -1,8 +1,7 @@
-import os
-import json
 from flask import Flask, render_template, request, redirect, url_for, flash, send_file
 from pymongo import MongoClient
 from bson import ObjectId
+from dir_def import MONGO_URL, DB_NAME
 
 # Import logger
 from logger import get_logger
@@ -12,17 +11,8 @@ logger = get_logger()
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
 
-# Load MongoDB config from ./config/config.json
-with open(os.path.join(os.path.dirname(__file__), 'config', 'config.json')) as f:
-    config = json.load(f)
-mongodb_cfg = config.get('mongodb', {})
-mongo_url = mongodb_cfg.get('url', 'mongodb://localhost:27017')
-
-# Get DB name from config
-db_name = mongodb_cfg.get('db', 'conta_db')
-
-client = MongoClient(mongo_url)
-db = client[db_name]
+client = MongoClient(MONGO_URL)
+db = client[DB_NAME]
 collection = db['apuntes_desc_col']
 
 # Ensure collection exists

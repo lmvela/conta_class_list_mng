@@ -67,3 +67,7 @@ coverage.xml
 
 # Logs
 *.log
+
+# local folder
+config/
+logs/
