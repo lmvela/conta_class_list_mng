@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  flask_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: conta_class_list_mng_container
+    volumes:
+      - ./config:/config
+      - ./logs:/logs    
+    ports:
+      - "9005:9005"     # expone tu API Flask
+    restart: unless-stopped
+    environment:
+      FLASK_ENV: production
+      PYTHONUNBUFFERED: "1"
